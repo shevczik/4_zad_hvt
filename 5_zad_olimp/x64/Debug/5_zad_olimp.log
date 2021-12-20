@@ -1,0 +1,4 @@
+﻿  5_zad_olimp.cpp
+C:\Users\user\source\repos\5_zad_olimp\5_zad_olimp\5_zad_olimp.cpp(73,21): warning C4305: =: усечение из "int" в "short"
+C:\Users\user\source\repos\5_zad_olimp\5_zad_olimp\5_zad_olimp.cpp(73,15): warning C4309: =: усечение константного значения
+  5_zad_olimp.vcxproj -> C:\Users\user\source\repos\5_zad_olimp\x64\Debug\5_zad_olimp.exe
