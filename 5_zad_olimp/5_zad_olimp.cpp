@@ -1,20 +1,11 @@
-﻿
 #include <vector>
-#include <string>
 #include <iostream>
 using namespace std;
-
-
 int main()
 {
     short x,y,amb_x ,amb_y,size,koef;
-    //1 строка
-    cin >> y;
-    cin >> x;
-    cin >> amb_x;
-    cin >> amb_y;
-    cin >> size;
-    cin >> koef;
+    cin >> y;cin >> x;cin >> amb_x;
+    cin >> amb_y;cin >> size;cin >> koef;
     amb_x--;
     amb_y--;
     vector <vector <int>> field_cost;
@@ -30,7 +21,6 @@ int main()
             field_mass[i][k] = num;
         }
     }
-
     for (int k = 0; k < y; k++) { // заполнение вектора цены за тону на клетке
         for (int i = 0; i < x; i++) {
             short num;
@@ -39,18 +29,7 @@ int main()
             field_cost[i][k] = dostavka + num;
         }
     }
-  /*  cout << endl; cout << endl;
-    for (int k = 0; k < y; k++) { 
-        for (int i = 0; i < x; i++) {
-            cout << field_cost[i][k] << " ";
-        }
-        cout << endl;
-    }
-    cout << endl; cout << endl;*/
-
      short cost = 0 ,mass=0;
-
-
     short min= SHRT_MAX, min_x, min_y;
     for (; true;) { //поиск минимальных значений 
         for (int k = 0; k < y; k++) {
@@ -73,7 +52,4 @@ int main()
         min = SHRT_MAX;
         
     }
-    
-
-
 }
